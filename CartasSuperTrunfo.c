@@ -1,41 +1,33 @@
 #include <stdio.h>
 
-int main(){
-    char Estado [50]= "";
-    char Codigo[50] = "";
-    char Cidade [50] = "";
-    int Populacao = 0;
-    float Area = 0;
-    float PIB = 0;
-    int PT = 0;
-    
-    printf("Entre com o Nome do estado:\n");
-    scanf("%s", &Estado);
-    
-    printf("Entre com o Código da Carta:\n");
-    scanf("%s", &Codigo);
+   int main(){
+       char estado;
+       char codigo;
+       char cidade[10];
+       int  populacao;
 
-    printf("Entre com o Nome da Cidade:\n");
-    scanf("%s", &Cidade);
 
-    printf("Entre com a População da Cidade:\n");
-    scanf("%i", &Populacao);
+       printf("Entre com a inicial do estado: \n");
+       scanf(" %c", &estado);
+       
+       printf("Entre com o codigo do estado (número de 1 a 4): \n");
+       scanf(" %c", &codigo);
 
-    printf("Entre com o PIB :\n");
-    scanf("%f", &PIB);
-
-    printf("Entre com a Quantidade de Pontos Turísticos:\n");
-    scanf("%i", &PT);
-
+       printf("Entre com a cidade: \n");
+       scanf(" %s", cidade);
 
     
+       printf("Entre com a populacao:\n");
+       scanf("\n %i", &populacao);
+       
 
-    printf("Dados Cadastrados:\n");
-    printf("Estado: %s. \n", Estado);   
-    printf("Código: %s. \n", Codigo);
-    printf("Cidade: %s. \n", Cidade);
-    printf("População: %i. \n", Populacao);
-    printf("PIB: %f. \n", PIB);
-    printf("Pontos Turísticos: %i. \n", PT);
 
-}
+
+       
+       printf("\n     Codigo Da Carta: %c", estado);
+       printf("0%c\n", codigo);
+       printf("cidade: %s \n", cidade);
+       printf("populacao: %i", populacao);
+
+return 0;
+   }
