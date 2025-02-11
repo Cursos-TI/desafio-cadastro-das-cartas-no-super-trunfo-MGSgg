@@ -5,29 +5,42 @@
        char codigo;
        char cidade[10];
        int  populacao;
+       float area;
+       float PIB;
+       int PT;
 
 
        printf("Entre com a inicial do estado: \n");
        scanf(" %c", &estado);
        
-       printf("Entre com o codigo do estado (número de 1 a 4): \n");
+       printf("\nEntre com um número de 1 a 4: \n");
        scanf(" %c", &codigo);
 
-       printf("Entre com a cidade: \n");
+       printf("\nEntre com a cidade: \n");
        scanf(" %s", cidade);
 
-    
-       printf("Entre com a populacao:\n");
+       printf("\nEntre com a populacao:\n");
        scanf("\n %i", &populacao);
+
+       printf("\nEntre com a area: \n");
+       scanf(" %f", &area);
+
+       printf("\nEntre com o PIB: \n");
+       scanf(" %f", &PIB);
+
+       printf("\nEntre com os Pontos Turísticos: \n");
+       scanf(" %i", &PT);
        
 
 
 
-       
-       printf("\n     Codigo Da Carta: %c", estado);
+       printf("\n          Informações da Carta %c", estado);
        printf("0%c\n", codigo);
-       printf("cidade: %s \n", cidade);
-       printf("populacao: %i", populacao);
+       printf("\nCidade: %s \n", cidade);
+       printf("\nPopulação: %i habitantes \n", populacao);
+       printf("\nÁrea: %f km² \n ", area);
+       printf("\nPIB: R$ %f \n ", PIB);
+       printf("\nPontos Turísticos: %i \n ", PT);
 
-return 0;
+
    }
