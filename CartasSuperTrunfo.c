@@ -8,6 +8,8 @@
        float area;
        float PIB;
        int PT;
+       float DP;
+       float PPC;
 
 
        printf("Entre com a inicial do estado: \n");
@@ -31,6 +33,8 @@
        printf("\nEntre com os Pontos Turísticos: \n");
        scanf(" %i", &PT);
        
+       DP = populacao / area;
+       PPC = PIB / populacao;
 
 
 
@@ -41,6 +45,9 @@
        printf("\nÁrea: %f km² \n ", area);
        printf("\nPIB: R$ %f \n ", PIB);
        printf("\nPontos Turísticos: %i \n ", PT);
+       printf("\nDensidade Populacional: %f \n", DP);
+       printf("\nPIB per capita: %f \n", PPC);
+
 
 
    }
