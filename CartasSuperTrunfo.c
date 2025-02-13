@@ -38,7 +38,7 @@
 
 
 
-       printf("\n          Informações da Carta %c", estado);
+       printf("\n        Informações da Carta %c", estado);
        printf("0%c\n", codigo);
        printf("\nCidade: %s \n", cidade);
        printf("\nPopulação: %i habitantes \n", populacao);
