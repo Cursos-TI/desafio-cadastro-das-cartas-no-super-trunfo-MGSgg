@@ -8,9 +8,11 @@
        int  populacao;
        float area;
        float PIB;
-       int PontoTour;
-       
-    
+       int PontoTour; 
+       float DP;
+       float PPC;
+
+
        printf("\nEntre com a inicial do estado: \n"); // Imprime ao usuário a solicitação de inserir a inicial do estado
        scanf(" %c", &estado); // Lê os dados inseridos pelo usuário e os atribui a variável estado
        
@@ -32,6 +34,10 @@
        printf("\nEntre com os Pontos Turísticos: \n"); // Imprime ao usuário a solicitação de inserir a quantidade de pontos turísticos
        scanf(" %i", &PontoTour); // Lê os dados inseridos pelo usuário e os atribui a variável Pontos Turísticos
 
+       DP = populacao / area;
+       PPC = PIB / populacao;
+
+
        printf("\n        Informações da Carta 1 %c", estado);
        printf("%s \n", codigo);
        printf("\nCidade:  %s \n", cidade);
@@ -39,6 +45,10 @@
        printf("\nÁrea:  %f km² \n ", area);
        printf("\nPIB: R$ %f \n ", PIB);
        printf("\nPontos Turísticos:  %i \n ", PontoTour);
+       printf("\nDensidade Populacional:  %f \n", DP);
+       printf("\nPIB per capita:  %f \n", PPC);
+       
+
     
 
        char estado1;
@@ -48,12 +58,17 @@
        float area1;
        float PIB1;
        int PontoTour1;
+       float DP1;
+       float PPC1;
+
+       DP1 = populacao1 / area1;
+       PPC1 = PIB1 / populacao1;
 
        printf("\nEntre com a inicial do estado 2 : \n");
        scanf(" %c", &estado1);
        
        printf("\nEntre com um número de 01 a 04: \n");
-       scanf(" %s", &codigo1);
+       scanf(" %s", codigo1);
 
        printf("\nEntre com o estado 2 : \n");
        scanf(" %s", cidade1);
@@ -66,8 +81,10 @@
 
        printf("\nEntre com o PIB do estado 2: \n");
        scanf(" %f", &PIB1);
+       
        printf("\nEntre com os Pontos Turísticos do estado 2: \n");
        scanf(" %i", &PontoTour1);
+
 
 
        printf("\n        Informações da Carta 1 %c", estado);
@@ -77,6 +94,9 @@
        printf("\nÁrea:  %f km² \n ", area);
        printf("\nPIB: R$ %f \n ", PIB);
        printf("\nPontos Turísticos:  %i \n ", PontoTour);
+       printf("\nDensidade Populacional:  %f \n", DP);
+       printf("\nPIB per capita:  %f \n", PPC);
+       
 
 
        printf("\n        Informações da Carta 2 %c", estado1);
@@ -86,4 +106,6 @@
        printf("\nÁrea:  %f km² \n ", area1);
        printf("\nPIB: R$ %f \n ", PIB1);
        printf("\nPontos Turísticos:  %i \n ", PontoTour1);
+       printf("\nDensidade Populacional:  %f \n", DP1);
+       printf("\nPIB per capita:  %f \n", PPC1);
 }
